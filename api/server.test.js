@@ -16,5 +16,7 @@ afterAll(async () => {
 })
 
 describe('[GET] /hobbits', () => {
-  
+  it('responds with 200 OK', async () => {
+    
+  })
 })
