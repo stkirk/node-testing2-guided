@@ -26,6 +26,6 @@ describe('Hobbit.get()', () => {
     expect(hobbits).toHaveLength(4)
   })
   it('hobbits returned are of the correct shape', async () => {
-    // you!
+    const hobbits = await Hobbit.getAll()
   })
 })
