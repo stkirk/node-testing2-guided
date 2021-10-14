@@ -37,5 +37,6 @@ describe('[GET] /hobbits', () => {
 })
 describe('[POST] /hobbits', () => {
   it.todo('responds with 201 CREATED')
-  it.todo('causes a ')
+  it.todo('causes a hobbit to be added to the db')
+  it.todo('responds with the newly created hobbit')
 })
