@@ -1,4 +1,5 @@
 const db = require('../../data/dbConfig')
+const Hobbit = require('./hobbits-model')
 
 beforeAll(async () => {
   await db.migrate.rollback()
