@@ -27,5 +27,6 @@ describe('Hobbit.get()', () => {
   })
   it('hobbits returned are of the correct shape', async () => {
     const hobbits = await Hobbit.getAll()
+    expect(hobbits).toMatchObject([{name: 'sam'}])
   })
 })
