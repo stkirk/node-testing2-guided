@@ -20,8 +20,8 @@ async function insert(hobbit) {
   const [id] = await db('hobbits').insert(hobbit)
   return getById(id) /// not necessary with Postgres
 
-  const [inserted] = await db('hobbits')
-    .insert(hobbit, ['id', 'name'])
+  // const [inserted] = await db('hobbits')
+  //   .insert(hobbit, ['id', 'name']) // POSTGRES WAY
 }
 
 async function update(id, changes) {
