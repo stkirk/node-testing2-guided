@@ -3,6 +3,7 @@
 exports[`[POST] /hobbits responds with the newly created hobbit 1`] = `
 Object {
   "id": 5,
+  "lady": "gaga",
   "name": "bilbo",
 }
 `;
