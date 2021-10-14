@@ -35,3 +35,4 @@ describe('[GET] /hobbits', () => {
     ])
   })
 })
+describe('[POST] /hobbits', )
