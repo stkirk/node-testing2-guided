@@ -19,19 +19,16 @@ test('environment', () => {
 })
 
 describe('Hobbit.get()', () => {
-
   let hobbits
   beforeEach(async () => {
     hobbits = await Hobbit.getAll()
   })
-
   it('returns all (4) hobbits', async () => {
     // use the function to get data, store it in var
     // assert that the length of the structure is 4
     expect(hobbits).toHaveLength(4)
   })
   it('hobbits returned are of the correct shape', async () => {
-    const hobbits = await Hobbit.getAll()
     expect(hobbits).toMatchObject([
       { id: 1, name: 'sam' },
       { id: 2, name: 'frodo' },
