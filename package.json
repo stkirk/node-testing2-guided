@@ -7,7 +7,7 @@
     "migrate": "knex migrate:latest",
     "seed": "knex seed:run",
     "ketchup": "git fetch && git reset --hard origin/lecture",
-    "test": "NODE_ENV=testing jest --watchAll --verbose --runInBand"
+    "test": "cross-env jest --watchAll --verbose --runInBand"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -16,6 +16,7 @@
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.0.1",
     "jest": "^27.2.5",
     "nodemon": "^2.0.12"
