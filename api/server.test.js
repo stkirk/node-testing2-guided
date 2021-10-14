@@ -48,6 +48,6 @@ describe('[POST] /hobbits', () => {
     expect(hobbits).toHaveLength(5)
   })
   it('responds with the newly created hobbit', () => {
-    
+    expect(res.body).toMatchSnapshot()
   })
 })
