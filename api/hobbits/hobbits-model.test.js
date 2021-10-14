@@ -19,6 +19,10 @@ test('environment', () => {
 })
 
 describe('Hobbit.get()', () => {
+
+  let hobbits
+  befo
+
   it('returns all (4) hobbits', async () => {
     // use the function to get data, store it in var
     // assert that the length of the structure is 4
