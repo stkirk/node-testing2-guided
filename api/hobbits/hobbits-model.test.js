@@ -4,6 +4,8 @@ test('environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
 })
 
-beforeEach(async () => {
+beforeAll(async () => {
   await db.migrate.rollback()
+  await db.migrate.latest()
 })
+
