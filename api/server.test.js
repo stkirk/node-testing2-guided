@@ -21,6 +21,6 @@ describe('[GET] /hobbits', () => {
     expect(res.status).toBe(200)
   })
   it('responds with all (4) the hobbits', async () => {
-    
+    // YOU!
   })
 })
