@@ -36,6 +36,10 @@ describe('[GET] /hobbits', () => {
   })
 })
 describe('[POST] /hobbits', () => {
+  let res
+  beforeEach(async () => {
+    res = request
+  })
   it.todo('responds with 201 CREATED')
   it.todo('causes a hobbit to be added to the db')
   it.todo('responds with the newly created hobbit')
