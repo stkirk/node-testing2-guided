@@ -41,7 +41,7 @@ describe('[POST] /hobbits', () => {
     res = request(server).post('/hobbits').send({ name: 'bilbo' })
   })
   it('responds with 201 CREATED', async () => {
-    // YOU
+    expect(res.status).toBe(201)
   })
   it.todo('causes a hobbit to be added to the db')
   it.todo('responds with the newly created hobbit')
