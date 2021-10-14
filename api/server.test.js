@@ -26,6 +26,11 @@ describe('[GET] /hobbits', () => {
   })
   it('responds with the correct data structure', async () => {
     const res = await request(server).get('/hobbits')
-    expect(res.body).toMatchObject
+    expect(res.body).toMatchObject([
+      { id: 1, name: 'sam' },
+      { id: 2, name: 'frodo' },
+      { id: 3, name: 'pippin' },
+      { id: 4, name: 'merry' },
+    ])
   })
 })
