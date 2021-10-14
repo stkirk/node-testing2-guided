@@ -33,5 +33,9 @@ describe('Hobbit.get()', () => {
       { id: 3, name: 'pippin' },
       { id: 4, name: 'merry' },
     ])
+    expect(hobbits[0]).toMatchObject({ name: 'sam' })
+    expect(hobbits[1]).toMatchObject({ name: 'frodo' })
+    expect(hobbits[2]).toMatchObject({ name: 'pippin' })
+    expect(hobbits[3]).toMatchObject({ name: 'sam' })
   })
 })
