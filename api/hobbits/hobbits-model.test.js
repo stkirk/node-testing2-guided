@@ -41,3 +41,6 @@ describe('Hobbit.get()', () => {
     expect(hobbits[3]).toMatchObject({ name: 'merry' })
   })
 })
+describe('Hobbit.getById(id)', () => {
+  it.todo('')
+})
