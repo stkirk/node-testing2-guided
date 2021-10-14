@@ -1,1 +1,1 @@
-const 
+const server = require('./server')
