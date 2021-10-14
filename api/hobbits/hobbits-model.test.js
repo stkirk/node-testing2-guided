@@ -16,9 +16,3 @@ afterAll(async () => {
 test('environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
 })
-test('environment', () => {
-  expect(process.env.NODE_ENV).toBe('testing')
-})
-test('environment', () => {
-  expect(process.env.NODE_ENV).toBe('testing')
-})
