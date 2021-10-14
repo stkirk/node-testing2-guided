@@ -24,5 +24,8 @@ describe('[GET] /hobbits', () => {
     const res = await request(server).get('/hobbits')
     expect(res.body).toHaveLength(4)
   })
-  it('responds with the correct data structure', async ())
+  it('responds with the correct data structure', async () => {
+    const res = await request(server).get('/hobbits')
+    expect(res.body).toMatchObject
+  })
 })
