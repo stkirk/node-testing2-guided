@@ -27,6 +27,11 @@ describe('Hobbit.get()', () => {
   })
   it('hobbits returned are of the correct shape', async () => {
     const hobbits = await Hobbit.getAll()
-    expect(hobbits).toMatchObject([{name: 'sam'}])
+    expect(hobbits).toMatchObject([
+      { id: 1, name: 'sam' },
+      { id: 2, name: 'frodo' },
+      { id: 3, name: 'merry' },
+      { id: 4, name: 'pippin' },
+    ])
   })
 })
