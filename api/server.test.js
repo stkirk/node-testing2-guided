@@ -44,7 +44,8 @@ describe('[POST] /hobbits', () => {
     expect(res.status).toBe(201)
   })
   it('causes a hobbit to be added to the db', async () => {
-    
+    const hobbits = await db('hobbits')
+    expect(hobbits).toHaveLength(5)
   })
   it.todo('responds with the newly created hobbit')
 })
