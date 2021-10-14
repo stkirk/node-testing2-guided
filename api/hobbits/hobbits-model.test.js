@@ -23,7 +23,7 @@ describe('Hobbit.get()', () => {
     // use the function to get data, store it in var
     // assert that the length of the structure is 4
     const hobbits = await Hobbit.getAll()
-    expect(hobbits).
+    expect(hobbits).toHaveLength(4)
   })
   it.todo('hobbits returned are of the correct shape')
 })
