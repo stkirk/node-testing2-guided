@@ -48,8 +48,4 @@ describe('Hobbit.getById(id)', () => {
     const frodo = await Hobbit.getById(2)
     expect(frodo).toMatchObject({ name: 'frodo' })
   })
-
-  const hobbits = await Hobbit.getAll();
-    const hobbit = await Hobbit.getById(1);
-    expect(hobbit).toMatchObject(hobbits[0]);
 })
