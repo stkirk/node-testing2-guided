@@ -36,6 +36,6 @@ describe('Hobbit.get()', () => {
     expect(hobbits[0]).toMatchObject({ name: 'sam' })
     expect(hobbits[1]).toMatchObject({ name: 'frodo' })
     expect(hobbits[2]).toMatchObject({ name: 'pippin' })
-    expect(hobbits[3]).toMatchObject({ name: 'sam' })
+    expect(hobbits[3]).toMatchObject({ name: 'merry' })
   })
 })
