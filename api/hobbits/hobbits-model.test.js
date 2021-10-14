@@ -54,6 +54,8 @@ describe('Hobbit.insert(hobbit)', () => {
     // insert hobbit
     // fetch hobbits
     // assert the inserted hobbit is there
+    await Hobbit.insert({ name: 'bilbo' });
+    expect(await Hobbit.getAll()).toHaveLength(5);
   })
   it.todo('inserting a hobbits resolves to the new hobbit')
 })
