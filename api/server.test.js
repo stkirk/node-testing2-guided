@@ -35,4 +35,7 @@ describe('[GET] /hobbits', () => {
     ])
   })
 })
-describe('[POST] /hobbits', )
+describe('[POST] /hobbits', () => {
+  it.todo('responds with 201 CREATED')
+  it.todo('causes a ')
+})
