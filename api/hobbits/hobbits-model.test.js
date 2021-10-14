@@ -17,3 +17,8 @@ afterAll(async () => {
 test('environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
 })
+
+describe('Hobbit.get()', () => {
+  it.todo('returns all (4) hobbits')
+  it.todo('hobbits returned are of the correct shape')
+})
