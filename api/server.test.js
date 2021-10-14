@@ -47,5 +47,7 @@ describe('[POST] /hobbits', () => {
     const hobbits = await db('hobbits')
     expect(hobbits).toHaveLength(5)
   })
-  it.todo('responds with the newly created hobbit')
+  it('responds with the newly created hobbit', () => {
+    
+  })
 })
