@@ -16,16 +16,17 @@ afterAll(async () => {
 })
 
 describe('[GET] /hobbits', () => {
+  let res
+  beforeEach(async () => {
+    res = await request(server).get('/hobbits')
+  })
   it('responds with 200 OK', async () => {
-    const res = await request(server).get('/hobbits')
     expect(res.status).toBe(200)
   })
   it('responds with all (4) the hobbits', async () => {
-    const res = await request(server).get('/hobbits')
     expect(res.body).toHaveLength(4)
   })
   it('responds with the correct data structure', async () => {
-    const res = await request(server).get('/hobbits')
     expect(res.body).toMatchObject([
       { id: 1, name: 'sam' },
       { id: 2, name: 'frodo' },
