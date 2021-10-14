@@ -38,7 +38,7 @@ describe('[GET] /hobbits', () => {
 describe('[POST] /hobbits', () => {
   let res
   beforeEach(async () => {
-    res = request(server).post('/hobbits').send({ name: 'bilbo' })
+    res = await request(server).post('/hobbits').send({ name: 'bilbo' })
   })
   it('responds with 201 CREATED', async () => {
     expect(res.status).toBe(201)
