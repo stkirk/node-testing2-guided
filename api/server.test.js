@@ -43,6 +43,8 @@ describe('[POST] /hobbits', () => {
   it('responds with 201 CREATED', async () => {
     expect(res.status).toBe(201)
   })
-  it.todo('causes a hobbit to be added to the db')
+  it('causes a hobbit to be added to the db', async () => {
+    
+  })
   it.todo('responds with the newly created hobbit')
 })
