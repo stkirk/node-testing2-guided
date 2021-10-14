@@ -17,6 +17,6 @@ afterAll(async () => {
 
 describe('[GET] /hobbits', () => {
   it('responds with 200 OK', async () => {
-    const res = await request(server).get('/hobbits')
+    const res = await request(server).post('/hobbits').send({ name: 'bilbo'})
   })
 })
