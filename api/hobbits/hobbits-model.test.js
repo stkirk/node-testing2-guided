@@ -51,9 +51,6 @@ describe('Hobbit.getById(id)', () => {
 })
 describe('Hobbit.insert(hobbit)', () => {
   it('inserting a hobbit causes 5 hobbits to exist in db', async () => {
-    // insert hobbit
-    // fetch hobbits
-    // assert the inserted hobbit is there
     await Hobbit.insert({ name: 'bilbo' })
     const hobbits = await db('hobbits')
     expect(hobbits).toHaveLength(5)
