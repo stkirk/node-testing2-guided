@@ -19,6 +19,8 @@ test('environment', () => {
 })
 
 describe('Hobbit.get()', () => {
-  it.todo('returns all (4) hobbits')
+  it('returns all (4) hobbits', async () => {
+    // 
+  })
   it.todo('hobbits returned are of the correct shape')
 })
