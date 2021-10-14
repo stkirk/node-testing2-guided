@@ -42,5 +42,7 @@ describe('Hobbit.get()', () => {
   })
 })
 describe('Hobbit.getById(id)', () => {
-  it.todo('gets the correct hobbit by its id')
+  it('gets the correct hobbit by its id', async () => {
+    
+  })
 })
