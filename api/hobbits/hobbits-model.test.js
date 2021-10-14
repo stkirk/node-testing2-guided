@@ -49,4 +49,7 @@ describe('Hobbit.getById(id)', () => {
     expect(frodo).toMatchObject({ name: 'frodo' })
   })
 })
-describe
+describe('Hobbit.insert(hobbit)', () => {
+  it('')
+  it('')
+})
