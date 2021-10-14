@@ -51,5 +51,5 @@ describe('Hobbit.getById(id)', () => {
 })
 describe('Hobbit.insert(hobbit)', () => {
   it.todo('inserting a hobbit causes 5 hobbits to exist in db')
-  it.todo('')
+  it.todo('inserting a hobbits resolves to the new hobbit')
 })
