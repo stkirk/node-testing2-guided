@@ -12,28 +12,40 @@ server.get("/", (req, res) => {
 
 server.get("/hobbits", (req, res) => {
   Hobbits.getAll()
-    .then(hobbits => {
+    .then((hobbits) => {
       res.status(200).json(hobbits);
     })
-    .catch(error => {
+    .catch((error) => {
       res.status(500).json(error);
     });
 });
 
 server.get("/hobbits/id", (req, res) => {
-  res.end()
+  res.end();
 });
 
-server.post("/hobbits", (req, res) => {
-  res.end()
+function validateHobbit(req, res, next) {
+  if (!req.body.name) {
+    res.status(422).json({ message: "must have name property" });
+  } else next();
+}
+
+server.post("/hobbits", validateHobbit, (req, res) => {
+  Hobbits.insert(req.body)
+    .then((hobbit) => {
+      res.status(201).json(hobbit);
+    })
+    .catch((error) => {
+      res.status(500).json(error);
+    });
 });
 
 server.delete("/hobbits/:id", (req, res) => {
-  res.end()
+  res.end();
 });
 
 server.put("/hobbits/:id", (req, res) => {
-  res.end()
+  res.end();
 });
 
 module.exports = server;
